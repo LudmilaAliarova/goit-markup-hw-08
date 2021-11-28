@@ -1,0 +1,109 @@
+.team {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f5f4fa;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.team-title {
+  text-align: center;
+  margin: 0px auto 30px auto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 768px) {
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.team-list {
+  width: 100%;
+  margin: 0 auto -30px auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+}
+
+.team-image {
+  margin: 0 auto;
+  background: #f5f4fa;
+}
+
+.team-item {
+  background: #f5f4fa;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0 15px 30px 15px;
+  max-width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    flex-basis: (calc(100% / 2 - 30));
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: (calc (100% - 90) / 4);
+    margin: 0 15px;
+  }
+}
+
+.team-item-name {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-third-color);
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social-icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,191 @@
+.portfolio-section {
+  width: 100%;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.btn-container {
+  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
+}
+.btn-list {
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: start;
+    min-height: 92px;
+    padding-bottom: 0;
+  }
+}
+.btn-item {
+  @media screen and (max-width: 767px) {
+    top: 0;
+    bottom: 0;
+  }
+}
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-item:last-child {
+  margin-right: 0;
+}
+
+.pf-btn {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second-color);
+  background-color: #f5f4fa;
+  border: none;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.change-pf-btn:hover,
+.change-pf-btn:focus {
+  color: var(--text-light-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.pf-list {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.pf-item {
+  height: 100%;
+  margin: 0 15px 30px 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30) / 2);
+    width: 354px;
+    min-height: 404px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60) / 3);
+    width: 370px;
+    height: 404px;
+  }
+}
+.pf-image {
+  margin: 0 auto;
+}
+.pf-description {
+  max-width: 100%;
+  padding: 20px 24px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+.pf-block {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 146px;
+  }
+}
+.pf-block-special {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 146px;
+    justify-content: space-between;
+  }
+}
+.text-special {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
+}
+.position-special {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 0;
+  }
+}
+.pf-project {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  height: 36px;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.pf-group {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  height: 30px;
+  color: var(--text-third-color);
+}
+.pf-picture-text {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.picture-text {
+  position: absolute;
+  padding: 49px 24px;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-light-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .pf-item:hover & {
+    transform: translateY(0);
+  }
+}
