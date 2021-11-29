@@ -1897,6 +1897,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .pf-block-special {
+    display: flex;
+    flex-direction: column;
+    height: 146px;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .pf-block-special {
     display: flex;
